@@ -78,8 +78,11 @@ body {
         color: white;
         text-align: center; 
         margin-top: 1rem;
-        font-size: 1.2rem;
-        
+        font-size: 1.2rem; 
+    }
+
+    .titulo-grafica{
+        margin: 2rem;
     }
    
     

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,40 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
 
-    <div class="header-section">  
+    <div class="header-section">
         <h2>Conversor de Monedas Nacional</h2>
-        <div class="header-line" ></div>
-    </div> 
+        <div class="header-line"></div>
+    </div>
 
-    <section> 
+    <section>
 
-    <label class="item" for="inputCLP">Pesos CLP</label>
-    <input class="item" type="text" id="valor" name="valor">
+        <label class="item" for="inputCLP">Pesos CLP</label>
+        <input class="item" type="text" id="valor" name="valor">
 
-    <label class="item" for="monedasData"> Moneda a Convertir</label>    
-    <select class="item-select" name="monedas" id="monedas" ></select>
+        <label class="item" for="monedasData"> Moneda a Convertir</label>
+        <select class="item-select" name="monedas" id="monedas"></select>
 
-    <button type="submit" id="convertir" onchange="convertir()">Convertir</button>
+        <button type="submit" id="convertir" onchange="convertir()">Convertir</button>
+
+        <input class="resultado" type="text" id="conversion" name="conversion">
+
+
+    </section>
+
     
-    <input class="resultado" type="text" id="conversion" name="conversion">
-   
-   
-   </section> 
+
+    <h4 class="titulo-grafica">Gráfico de monedas</h4>
+    <div class="grafica">
+        <canvas id="myChart"></canvas>
+    </div>
 
 
     <script src="assets/js/converter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
+
 </html>
